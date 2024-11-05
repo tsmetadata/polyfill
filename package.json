@@ -1,9 +1,14 @@
 {
   "name": "@tsmetadata/polyfill",
   "version": "1.0.0",
+  "description": "Metadata symbol polyfill for legacy runtimes.",
   "author": "Ryan Huellen <me@ryanhuellen.com>",
   "keywords": ["polyfill", "typescript", "ts", "metadata"],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tsmetadata/polyfill.git"
+  },
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "scripts": {
