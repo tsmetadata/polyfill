@@ -59,10 +59,10 @@ jobs:
       - uses: actions/download-artifact@v4
         with:
           name: lib
+          path: ./
       - name: Publish library
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          cd ./lib &&
           npx semantic-release
