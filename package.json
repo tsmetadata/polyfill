@@ -1,0 +1,23 @@
+{
+  "name": "@tsmetadata/polyfill",
+  "version": "1.0.0",
+  "author": "Ryan Huellen <me@ryanhuellen.com>",
+  "keywords": ["polyfill", "typescript", "ts", "metadata"],
+  "license": "MIT",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "npm run clean && tsc && cp ./src/*.json ./lib",
+    "clean": "rm -rf ./lib",
+    "fix": "biome check --write .",
+    "lint": "biome lint .",
+    "test": "biome ci . && jest"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@types/jest": "^29.5.14",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.6.3"
+  }
+}
