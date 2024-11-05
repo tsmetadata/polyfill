@@ -39,13 +39,12 @@ jobs:
         run: npm run build
       - name: Prepare artifact
         run: |
-          mkdir -p ./lib/lib &&
-          mv -r lib ./lib/lib &&
+          mv ./lib/** ./lib/lib &&
           cp package.json README.md LICENSE ./lib
       - uses: actions/upload-artifact@v4
         with:
           name: lib
-          path: lib
+          path: ./lib
   publish:
     runs-on: ubuntu-latest
     needs: build
@@ -64,5 +63,5 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: |
-          cd lib &&
+          cd ./lib &&
           npx semantic-release
