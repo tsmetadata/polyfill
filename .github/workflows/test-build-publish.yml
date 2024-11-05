@@ -40,7 +40,7 @@ jobs:
       - name: Prepare artifact
         run: |
           mkdir -p ./lib/lib &&
-          mv ./lib/** ./lib/lib &&
+          mv ./lib/* ./lib/lib &&
           cp package.json README.md LICENSE ./lib
       - uses: actions/upload-artifact@v4
         with:
