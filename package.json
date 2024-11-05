@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Metadata symbol polyfill for legacy runtimes.",
   "author": "Ryan Huellen <me@ryanhuellen.com>",
-  "keywords": ["polyfill", "typescript", "ts", "metadata"],
+  "keywords": ["symbol", "metadata", "polyfill", "typescript", "ts"],
   "license": "MIT",
   "repository": {
     "type": "git",
