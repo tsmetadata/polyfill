@@ -11,6 +11,14 @@ const config: Config = {
       statements: 100,
     },
   },
+  transform: {
+    '^.+\\.ts?$': [
+      'ts-jest',
+      {
+        diagnostics: false,
+      },
+    ],
+  },
 };
 
 export default config;

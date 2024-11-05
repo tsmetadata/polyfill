@@ -5,3 +5,5 @@ declare global {
 }
 
 Symbol.metadata ??= Symbol('Symbol.metadata');
+
+export {};
