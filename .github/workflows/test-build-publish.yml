@@ -41,7 +41,7 @@ jobs:
         run: |
           mkdir -p ./lib/lib &&
           find ./lib -mindepth 1 -maxdepth 1 ! -name "lib" -exec mv {} ./lib/lib/ \;
-          cp package.json README.md LICENSE ./lib
+          cp -r .git/ package.json README.md LICENSE ./lib
       - uses: actions/upload-artifact@v4
         with:
           name: lib
