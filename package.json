@@ -12,11 +12,8 @@
   "publishConfig": {
     "access": "public"
   },
+  "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
-  "exports": {
-    ".": "./lib/index.js",
-    "./tsconfig.json": "./lib/tsconfig.polyfill.json"
-  },
   "scripts": {
     "build": "npm run clean && tsc && cp ./src/*.json ./lib",
     "clean": "rm -rf ./lib",
