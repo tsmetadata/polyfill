@@ -27,7 +27,7 @@ You may also need to configure your `tsconfig.json` to target <= ES2022 and incl
 ```json
 {
   "$schema": "https://json.schemastore.org/tsconfig",
-  "extends": ["@tsmetadata/polyfill/tsconfig.json"],
+  "extends": ["@tsmetadata/polyfill/lib/tsconfig.polyfill.json"],
 }
 ```
 
