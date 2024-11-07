@@ -10,8 +10,7 @@ In addition, the library provides the necessary global type declaration for `Sym
 
 ## 🌱 Install
 ```bash
-# `@tsmetadata/polyfill` is intended to be installed as a dev dependency.
-npm install -D @tsmetadata/polyfill
+npm install @tsmetadata/polyfill
 ```
 
 ## ⚙️ Usage
