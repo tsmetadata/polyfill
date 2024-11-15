@@ -1,9 +1,10 @@
 declare global {
   interface SymbolConstructor {
-    metadata: symbol;
+    readonly metadata: unique symbol;
   }
 }
 
+// @ts-expect-error
 Symbol.metadata ??= Symbol('Symbol.metadata');
 
 export {};
